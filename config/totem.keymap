@@ -113,7 +113,7 @@ label= "LOWER"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &kp UP      &none       &none           &kp PRCNT   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp LS(N0)
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp STAR    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS
+                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6   &kp KP_PLUS
     &trans      &none       &kp PG_DN   &none       &kp PG_UP   &none           &kp LS(N7)  &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS &trans      
                                         &trans      &trans      &trans          &kp COMMA   &kp DOT     &kp KP_N0      
                         >;
