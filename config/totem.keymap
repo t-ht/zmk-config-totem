@@ -138,7 +138,7 @@ label= "RAISE"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none       &none       &kp LA(N5)      &kp LA(N6)  &kp LBKT    &none       &kp SEMI    &none
-                &kp SQT     &none       &none       &kp LS(N8)  &kp NUHS        &kp LS(NUHS) &kp LS(N9)  &none       &none       &none             
+                &kp SQT     &none       &none       &kp LS(N8)  &kp LS(COMMA)   &kp LS(DOT) &kp LS(N9)  &none       &none       &none             
     &trans      &none       &none       &none       &none       &kp LA(N8)      &kp LA(N9)  &none       &none       &none       &none       &trans         
                                         &none       &none       &mo ADJ         &none       &none       &none      
                         >;
