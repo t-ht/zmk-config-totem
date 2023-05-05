@@ -138,7 +138,7 @@ label= "RAISE"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none       &none       &none       &kp LA(N5)      &kp LA(N6)  &kp LBKT    &none       &kp SEMI    &none
-                &kp SQT     &none       &none       &kp LS(N8)  &kp CARET       &kp LS(CARET) &kp LS(N9) &none      &none       &none             
+                &kp SQT     &none       &none       &kp LS(N8)  &kp GRAVE       &kp LS(GRAVE) &kp LS(N9) &none      &none       &none             
     &trans      &none       &none       &none       &none       &kp LA(N8)      &kp LA(N9)  &none       &none       &none       &none       &trans         
                                         &none       &none       &mo ADJ         &none       &none       &none      
                         >;
@@ -163,8 +163,8 @@ label= "ADJ"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset      &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &none          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+                &sys_reset  &bt BT_CLR  &out OUT_TOG &trans     &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
+                &bootloader &bt BT_NXT  &trans      &none       &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
     &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
