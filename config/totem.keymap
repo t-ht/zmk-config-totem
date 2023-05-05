@@ -139,7 +139,7 @@ label= "RAISE"                               ;
 
                 &none       &none       &none       &kp LS(MINUS) &kp LA(N5)    &kp LA(N6)  &kp LBKT    &none       &kp SEMI    &none
                 &kp SQT     &none       &none       &kp LS(N8)  &kp GRAVE       &kp LS(GRAVE) &kp LS(N9) &none      &none       &none             
-    &trans      &none       &none       &none       &kp LS(N7)  &kp LA(N8)      &kp LA(N9)  LA(LS(N7))  &none       &none       &none       &trans         
+    &trans      &none       &none       &none       &kp LS(N7)  &kp LA(N8)      &kp LA(N9)  &kp LA(LS(N7))  &none       &none       &none       &trans         
                                         &none       &none       &mo ADJ         &none       &none       &none      
                         >;
                 };
