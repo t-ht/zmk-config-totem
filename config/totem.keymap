@@ -89,7 +89,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &kp A       &kp R       &kp S       &kp T       &kp G           &kp M       &kp N       &kp E       &kp I       &kp O
-    &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   &kp RET
+    &kp TAB     &kp         &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   &kp RET
                                         &kp LGUI    &kp LSHFT   &mo LOWER       &mo RAISE   &kp SPACE   &kp LALT
                         >;
                 };
@@ -112,9 +112,9 @@ label= "LOWER"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp HOME    &kp UP      &kp END     &none           &kp PRCNT   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp LS(N0)
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6   &kp KP_PLUS
-    &trans      &none       &kp PG_DN   &none       &kp PG_UP   &none           &kp LS(N7)  &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MINUS &trans      
+                &none       &kp HOME    &kp UP      &kp END     &none           &kp PRCNT   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp EQUAL
+                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp STAR    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp PLUS
+    &trans      &none       &kp PG_DN   &none       &kp PG_UP   &none           &kp SLASH   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp MINUS   &trans      
                                         &trans      &trans      &trans          &kp COMMA   &kp DOT     &kp KP_N0      
                         >;
                 };
@@ -126,20 +126,20 @@ label= "LOWER"                              ;
 label= "RAISE"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃     #     ┃     §     ┃     €     ┃     ?     ┃     [     ┃   ┃     ]     ┃     #     ┃     Ü     ┃     '     ┃           ┃
+//             ┃           ┃           ┃           ┃     [     ┃           ┃   ┃           ┃     ]     ┃     Ü     ┃     '     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     Ä     ┃     ß     ┃     "     ┃     (     ┃     <     ┃   ┃     >     ┃     )     ┃     |     ┃     $     ┃     Ö     ┃
+//             ┃     Ä     ┃     §     ┃     ß     ┃     (     ┃     !     ┃   ┃     #     ┃     )     ┃     €     ┃     $     ┃     Ö     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃     !     ┃     /     ┃     {     ┃   ┃     }     ┃     \     ┃     ´     ┃     `     ┃           ┃           ┃
+// ┃           ┃           ┃           ┃           ┃     {     ┃           ┃   ┃           ┃     }     ┃     ´     ┃     `     ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃    ADJ    ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp NUHS       &kp LS(N3)  &none       &kp LS(MINUS) &kp LA(N5)    &kp LA(N6)  &none       &kp LBKT    &none       &none
-                &kp SQT     &none       &kp LS(N2)  &kp LS(N8)  &kp GRAVE       &kp LS(GRAVE) &kp LS(N9) &none      &none       &kp SEMI             
-    &trans      &none       &none       &none       &kp LS(N7)  &kp LA(N8)      &kp LA(N9)  &kp LA(LS(N7))  &none   &none       &none       &trans         
+                &none       &none       &none       &kp LBKT    &none           &none       &kp RBKT    &kp RA(U)   &none       &none
+                &kp RA(A)   &kp DOLLAR  &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(N5)  &kp DLLR    &kp RA(O)             
+    &trans      &none       &none       &none       &kp LBRC    &none           &none       &kp RBRC    &none       &none       &none       &trans         
                                         &none       &none       &mo ADJ         &none       &none       &none      
                         >;
                 };
