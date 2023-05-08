@@ -126,7 +126,7 @@ label= "LOWER"                              ;
 label= "RAISE"                             ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃     [     ┃           ┃   ┃           ┃     ]     ┃     Ü     ┃     '     ┃           ┃
+//             ┃           ┃     &     ┃     "     ┃     [     ┃     \     ┃   ┃           ┃     ]     ┃     Ü     ┃     '     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     Ä     ┃     §     ┃     ß     ┃     (     ┃     !     ┃   ┃     #     ┃     )     ┃     €     ┃     $     ┃     Ö     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -137,7 +137,7 @@ label= "RAISE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none       &none       &kp LBKT    &none           &none       &kp RBKT    &kp RA(U)   &none       &none
+                &none       &kp AMPS    &kp DQT     &kp LBKT    &kp BSLH        &none       &kp RBKT    &kp RA(U)   &kp SQT     &none
                 &kp RA(A)   &kp DOLLAR  &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(N5)  &kp DLLR    &kp RA(O)             
     &trans      &none       &none       &none       &kp LBRC    &none           &none       &kp RBRC    &none       &none       &none       &trans         
                                         &none       &none       &mo ADJ         &none       &none       &none      
