@@ -31,7 +31,7 @@ parse_config:
   trans_legend:
     t: "\u25BD"
     type: trans
-  zmk_combos: {"combo_backspace": {"align": "top", "offset": 3},"combo_delete": {"align": "top", "offset": 2.5},"combo_word_delete": {"align": "top", "offset": 2.5}}
+  zmk_combos: {"combo_backspace": {"align": "top", "offset": 2},"combo_delete": {"align": "top", "offset": 2},"combo_word_delete": {"align": "top", "offset": 2.5}}
   zmk_keycode_map:
     AMPERSAND: '&'
     AMPS: '&'
