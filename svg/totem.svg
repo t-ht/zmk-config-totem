@@ -8,6 +8,12 @@ svg.keymap {
     text-rendering: optimizeLegibility;
     fill: #24292e;
 }
+/* default key styling */
+rect.key {
+    fill: #f6f8fa;
+    stroke: #c9cccf;
+    stroke-width: 1;
+}
 </style>
 <g class="layer-base_layer">
 <text x="30.0" y="28.0" class="label">base_layer:</text>
