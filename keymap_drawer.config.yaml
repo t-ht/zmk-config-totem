@@ -1,6 +1,6 @@
 parse_config:
   preprocess: true
-  raw_binding_map: {"&mo LOWER": "LOWER", "&mo RAISE": "RAISE", "&bootloader": "BOOT", "&sys_reset": "RESET"}
+  raw_binding_map: {"lower_layer": "LOWER", "&mo RAISE": "RAISE", "&bootloader": "BOOT", "&sys_reset": "RESET"}
   skip_binding_parsing: false
   sticky_label: sticky
   trans_legend:
