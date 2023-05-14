@@ -1,4 +1,14 @@
 draw_config:
+  svg_style: |
+    /* font and background color specifications */
+    svg.keymap {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 14px;
+        font-weight: bold;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: #24292e;
+    }
   glyph_tap_size: 18
   glyphs:  # adapted from icons at https://tabler-icons.io/
     bspc: |
