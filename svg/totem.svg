@@ -1,7 +1,12 @@
 <svg width="906.2040938499077" height="1518.050845223857" viewBox="0 0 906.2040938499077 1518.050845223857" xmlns="http://www.w3.org/2000/svg">
-<style>/* font and background color specifications */
-svg {
+<style>/* inherit to force styles through use tags*/
+svg path {
+    fill: inherit;
+}
+/* font and background color specifications */
+svg.keymap {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-weight: bold;
     font-size: 14px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
@@ -9,7 +14,7 @@ svg {
 }
 
 /* default key styling */
-rect {
+rect.key {
     fill: #f6f8fa;
     stroke: #c9cccf;
     stroke-width: 1;
@@ -64,12 +69,29 @@ text.combo.hold, text.combo.shifted {
     font-size: 8px;
 }
 
+/* lighter symbol for transparent keys */
+text.trans {
+    fill: #7b7e81;
+}
+
 /* styling for combo dendrons */
-path {
+path.combo {
     stroke-width: 1;
     stroke: gray;
     fill: none;
 }
+
+/* Start Tabler Icons Cleanup */
+/* cannot use height/width with glyphs */
+.icon-tabler > path {
+    fill: inherit;
+    stroke: inherit;
+}
+/* hide tabler's default box */
+.icon-tabler > path[stroke="none"][fill="none"] {
+    visibility: collapse;
+}
+/* End Tabler Icons Cleanup */
 </style>
 <g class="layer-base_layer">
 <text x="30.0" y="28.0" class="label">base_layer:</text>
