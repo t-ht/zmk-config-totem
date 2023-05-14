@@ -1,3 +1,28 @@
+draw_config:
+  glyph_tap_size: 18
+  glyphs:  # adapted from icons at https://tabler-icons.io/
+    bspc: |
+      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+       <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path>
+       <path d="M12 10l4 4m0 -4l-4 4"></path>
+      </svg>
+    space: |
+      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3"></path>
+      </svg>
+    enter:
+      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none">
+         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+         <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1"></path>
+      </svg>
+    del: |
+      <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" transform="rotate(180, 9, 9)">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+       <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path>
+       <path d="M12 10l4 4m0 -4l-4 4"></path>
+      </svg>
 parse_config:
   preprocess: true
   raw_binding_map: {"lower_layer": "LOWER", "&RAISE": "RAISE", "adjust_layer": "ADJ", "&bootloader": "BOOT", "&sys_reset": "RESET"}
@@ -77,3 +102,4 @@ parse_config:
     RA(A): ä
     RA(S): ß
     RA(N5): €
+    LOWER: 'LOWER'
