@@ -25,7 +25,7 @@ draw_config:
       </svg>
 parse_config:
   preprocess: true
-  raw_binding_map: {"lower_layer": "LOWER", "&RAISE": "RAISE", "adjust_layer": "ADJ", "&bootloader": "BOOT", "&sys_reset": "RESET"}
+  raw_binding_map: {"&kp lower_layer": "LOWER", "&kp RAISE": "RAISE", "&adjust_layer": "ADJ", "&bootloader": "BOOT", "&sys_reset": "RESET"}
   skip_binding_parsing: false
   sticky_label: sticky
   trans_legend:
@@ -102,4 +102,3 @@ parse_config:
     RA(A): ä
     RA(S): ß
     RA(N5): €
-    LOWER: 'LOWER'
