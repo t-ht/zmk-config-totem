@@ -9,6 +9,12 @@ draw_config:
         text-rendering: optimizeLegibility;
         fill: #24292e;
     }
+    /* default key styling */
+    rect.key {
+        fill: #f6f8fa;
+        stroke: #c9cccf;
+        stroke-width: 1;
+    }
   glyph_tap_size: 18
   glyphs:  # adapted from icons at https://tabler-icons.io/
     bspc: |
