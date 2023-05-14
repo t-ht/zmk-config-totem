@@ -91,7 +91,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LCTRL A &mt LALT R  &mt LGUI S  &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RGUI E  &mt LALT I  &mt RCTRL O
     &kp TAB     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   &kp RET
-                                        &kp LGUI    &mt LSHFT LSHFT   &mo LOWER &mo RAISE   &mt RSHFT SPACE &kp LALT
+                                        &kp LGUI    &mt LSHFT SPACE  &mo LOWER  &mo RAISE   &mt RSHFT SPACE &kp LALT
                         >;
                 };
 
