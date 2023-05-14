@@ -1,6 +1,6 @@
 parse_config:
   preprocess: true
-  raw_binding_map: {"LOWER": "LOWER", "BASE": "BASE"}
+  raw_binding_map: {"&mo LOWER": "LOWER", "&mo RAISE": "RAISE", "&bootloader": "BOOT"}
   skip_binding_parsing: false
   sticky_label: sticky
   trans_legend:
@@ -72,4 +72,8 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
-    RA(U): Ü
+    RA(U): ü
+    RA(O): ö
+    RA(Ä): ä
+    RA(S): ß
+    RA(5): €
