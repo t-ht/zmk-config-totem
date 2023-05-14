@@ -1,6 +1,6 @@
 parse_config:
   preprocess: true
-  raw_binding_map: {"&base_layer": "BASE", "&lower_layer": "LOWER"}
+  raw_binding_map: {"LOWER": "LOWER", "BASE": "BASE"}
   skip_binding_parsing: false
   sticky_label: sticky
   trans_legend:
@@ -72,3 +72,4 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+    RA(U): Ü
