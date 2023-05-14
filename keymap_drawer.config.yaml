@@ -1,5 +1,10 @@
 draw_config:
   svg_style: |
+
+
+/* styling for combo dendrons */
+
+
     /* font and background color specifications */
     svg.keymap {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -9,6 +14,74 @@ draw_config:
         text-rendering: optimizeLegibility;
         fill: #24292e;
     }
+
+    /* default key styling */
+    rect.key {
+        fill: #f6f8fa;
+        stroke: #c9cccf;
+        stroke-width: 1;
+    }
+
+    /* color accent for combo boxes */
+    rect.combo {
+        fill: #cdf;
+    }
+
+    /* color accent for held keys */
+    rect.held, rect.combo.held {
+        fill: #fdd;
+    }
+
+    /* color accent for ghost (optional) keys */
+    rect.ghost, rect.combo.ghost {
+        fill: #ddd;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+    }
+
+    /* styling for layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        stroke: white;
+        stroke-width: 2;
+        paint-order: stroke;
+    }
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 11px;
+    }
+
+    text.hold {
+        text-anchor: middle;
+        dominant-baseline: auto;
+    }
+
+    text.shifted {
+        text-anchor: middle;
+        dominant-baseline: hanging;
+    }
+
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
+
+    /* lighter symbol for transparent keys */
+    text.trans {
+        fill: #7b7e81;
+    }
+
+    /* styling for combo dendrons */
+    path {
+      stroke-width: 1;
+     stroke: gray;
+      fill: none;
+    } 
 parse_config:
   preprocess: true
   raw_binding_map: {}
