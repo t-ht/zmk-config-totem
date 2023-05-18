@@ -55,17 +55,18 @@
     };
 
     macros {
-//        gif: gif {
-//            label = "giphy";
-//            compatible = "zmk,behavior-macro";
-//            #binding-cells = <0>;
-//            bindings
-//                = <&macro_press &kp LSHFT>
-//                , <&macro_tap &kp N2>
-//                , <&macro_release &kp LSHFT>
-//                , <&macro_tap &kp G &kp I &kp F>
-//                ;
-//        };
+        uuml: uuml{
+            label = "uuml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RA(U)>
+                , <&kp U>
+                ;
+
+        };
     };
 
         keymap {
@@ -138,7 +139,7 @@ label= "RAISE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp AMPS    &kp DQT     &kp LBKT    &kp BSLH        &none       &kp RBKT    &kp RA(U)   &kp SQT     &none
+                &none       &kp AMPS    &kp DQT     &kp LBKT    &kp BSLH        &none       &kp RBKT    &uuml       &kp SQT     &none
                 &kp RA(A)   &kp DOLLAR  &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(N5)  &kp DLLR    &kp RA(O)             
     &trans      &none       &none       &none       &kp LBRC    &none           &none       &kp RBRC    &none       &none       &none       &trans         
                                         &trans      &trans      &mo ADJ         &none       &trans      &trans      
