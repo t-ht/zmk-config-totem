@@ -55,7 +55,7 @@
     };
 
     macros {
-        uuml: uuml{
+        uuml: uuml {
             label = "uuml";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -64,6 +64,30 @@
             bindings
                 = <&kp RA(U)>
                 , <&kp U>
+                ;
+
+        };
+        auml: auml {
+            label = "auml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RA(U)>
+                , <&kp A>
+                ;
+
+        };
+        ouml: ouml {
+            label = "ouml";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RA(U)>
+                , <&kp O>
                 ;
 
         };
@@ -140,7 +164,7 @@ label= "RAISE"                             ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &kp AMPS    &kp DQT     &kp LBKT    &kp BSLH        &none       &kp RBKT    &uuml       &kp SQT     &none
-                &kp RA(A)   &kp DOLLAR  &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(N5)  &kp DLLR    &kp RA(O)             
+                &auml       &kp DOLLAR  &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(LS(N2))  &kp DLLR    &ouml             
     &trans      &none       &none       &none       &kp LBRC    &none           &none       &kp RBRC    &none       &none       &none       &trans         
                                         &trans      &trans      &mo ADJ         &none       &trans      &trans      
                         >;
