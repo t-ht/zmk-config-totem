@@ -163,9 +163,9 @@ label= "RAISE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp RA(LS(N2)) &kp AMPS &kp DQT     &kp LBKT    &kp BSLH        &kp DOLLAR  &kp RBKT    &uuml       &kp SQT     &kp RA(N2)
+                &kp RA(LS(N8)) &kp AMPS &kp DQT     &kp LBKT    &kp BSLH        &kp DOLLAR  &kp RBKT    &uuml       &kp SQT     &kp RA(N2)
                 &auml       &kp AT      &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(LS(N2)) &kp DLLR &ouml             
-    &trans      &none       &kp PIPE2   &kp TILDE2  &kp LBRC    &none           &none       &kp RBRC    &kp RA(E)   &kp GRAVE   &none       &trans         
+    &trans      &none       &kp PIPE    &kp TILDE  &kp LBRC    &none           &none       &kp RBRC    &kp RA(E)   &kp GRAVE   &none       &trans         
                                         &trans      &trans      &mo ADJ         &none       &trans      &trans      
                         >;
                 };
