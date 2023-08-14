@@ -57,6 +57,21 @@
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
 
+#define ZMK_HELPER_STRINGIFY(x) #x
+
+#define UC_MODMORPH(name, uc_binding, shifted_uc_binding) \
+    / { \
+        behaviors { \
+            name: name { \
+                compatible = "zmk,behavior-mod-morph"; \
+                label = ZMK_HELPER_STRINGIFY(UC_MORPH_ ## name); \
+                #binding-cells = <0>; \
+                bindings = <uc_binding>, <shifted_uc_binding>; \
+                mods = <(MOD_LSFT|MOD_RSFT)>; \
+            }; \
+        }; \
+    };
+
 #define DE_ESCAPE_CHARACTER (LC(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_LEFT_BRACE)))
 
 #define DE_FILE_SEPARATOR (LC(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE)))
@@ -342,3 +357,6 @@
 
 /* € */
 #define DE_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
+
+/* / - S:? */
+#define CM_FSLH (UC_MODMORPH(CM_FSLH, DE_FSLH, DE_QMARK))
