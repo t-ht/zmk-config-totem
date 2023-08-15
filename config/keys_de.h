@@ -358,8 +358,14 @@
 /* € */
 #define DE_EURO (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_E)))
 
-/* / - S:? */
+/* / -> ? */
 UC_MODMORPH(CM_FSLH, DE_FSLH, DE_QMARK)
 
-/* ; - S:: */
+/* ; -> : */
 UC_MODMORPH(CM_SEMI, DE_SEMI, DE_COLON)
+
+/* , -> < */
+UC_MODMORPH(CM_COMMA, DE_COMMA, DE_LT)
+
+/* . -> > */
+UC_MODMORPH(CM_DOT, DE_DOT, DE_GT)
