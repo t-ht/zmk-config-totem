@@ -66,7 +66,7 @@
                 compatible = "zmk,behavior-mod-morph"; \
                 label = ZMK_HELPER_STRINGIFY(UC_MORPH_ ## name); \
                 #binding-cells = <0>; \
-                bindings = <uc_binding>, <shifted_uc_binding>; \
+                bindings = <&kp uc_binding>, <&kp shifted_uc_binding>; \
                 mods = <(MOD_LSFT|MOD_RSFT)>; \
             }; \
         }; \
