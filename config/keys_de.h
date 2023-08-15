@@ -360,3 +360,6 @@
 
 /* / - S:? */
 UC_MODMORPH(CM_FSLH, DE_FSLH, DE_QMARK)
+
+/* ; - S:: */
+UC_MODMORPH(CM_SEMI, DE_SEMI, DE_COLON)
