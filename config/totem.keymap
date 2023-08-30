@@ -101,16 +101,16 @@ label= "LOWER"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃CTRL(LEFT) ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃CTRL(RIGHT)┃   ┃     *     ┃     4     ┃     5     ┃     6     ┃     +     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃  P DOWN   ┃           ┃   P UP    ┃           ┃   ┃     /     ┃     1     ┃     2     ┃     3     ┃     -     ┃           ┃
+// ┃           ┃           ┃   P UP    ┃           ┃  P DOWN   ┃           ┃   ┃     /     ┃     1     ┃     2     ┃     3     ┃     -     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   LGUI    ┃   LSHFT   ┃           ┃   ┃     ,     ┃     .     ┃     0     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &kp HOME    &kp UP      &kp END     &none           &kp PRCNT   &kp N7      &kp N8      &kp N9      &kp EQUAL
-                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp STAR    &kp N4      &kp N5      &kp N6      &kp PLUS
-    &trans      &none       &kp PG_DN   &none       &kp PG_UP   &none           &kp SLASH   &kp N1      &kp N2      &kp N3      &kp MINUS   &trans      
+                &none       &kp HOME    &kp UP      &kp END     &none           &kp DE_PRCNT &kp N7     &kp N8      &kp N9      &kp DE_EQUAL
+                &kp LC(LEFT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp LC(RIGHT)   &kp DE_STAR  &kp N4     &kp N5      &kp N6      &kp DE_PLUS
+    &trans      &none       &kp PG_UP   &none       &kp PG_DN   &none           &kp DE_SLASH &kp N1     &kp N2      &kp N3      &kp DE_MINUS   &trans      
                                         &trans      &trans      &trans          &kp COMMA   &kp DOT     &kp N0      
                         >;
                 };
@@ -133,9 +133,9 @@ label= "RAISE"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp RA(LS(N8)) &kp AMPS &kp DQT     &kp LBKT    &kp BSLH        &none       &kp RBKT    &kp uuml       &kp SQT     &kp RA(N6)
-                &kp auml &kp AT      &kp RA(S)   &kp LPAR    &kp EXCL        &kp HASH    &kp RPAR    &kp RA(LS(N2)) &kp DLLR &kp ouml             
-    &trans      &none       &kp PIPE    &kp TILDE   &kp LBRC    &none           &none       &kp RBRC    &kp RA(E)   &kp GRAVE   &none       &trans         
+                &kp DE_DEG  &kp DE_AMPS &kp DE_DQT   &kp DE_LBKT &kp DE_BSLH     &none       &kp DE_RBKT &kp uuml     &kp DE_SQT   &kp DE_SECT
+                &kp auml    &kp DE_AT   &kp DE_SZ    &kp DE_LPAR &kp DE_EXCL     &kp DE_HASH &kp DE_RPAR &kp DE_EURO  &kp DE_DLLR  &kp ouml             
+    &trans      &none       &kp DE_PIPE &kp DE_TILDE &kp DE_LBRC &none           &none       &kp DE_RBRC &kp DE_ACUTE &kp DE_GRAVE &none       &trans         
                                         &trans      &trans      &mo ADJ         &none       &trans      &trans      
                         >;
                 };
